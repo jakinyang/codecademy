@@ -1,0 +1,120 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 25px;
+  background-color: rgb(10, 14, 37);
+  color: white;
+  box-sizing: border-box;
+
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a:hover {
+  color: rgb(10, 14, 37);
+  text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white, 4px 4px 0px white;
+}
+/* Nav */
+nav {
+  background-color: rgb(10, 14, 37);
+  padding: 1vh;
+  margin-top: 10vh;
+  position: sticky;
+  top: 0px;
+  z-index: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+    display: inline;
+    padding: 1vw;
+  }
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(10, 14, 37);
+  text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white, 4px 4px 0px white;
+}
+
+nav a:active {
+
+}
+/* Main */
+
+h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 a:hover {
+  color: rgb(10, 14, 37);
+  text-shadow: 1px 0px white, -1px 0px white, 0px 1px white, 0px -1px white, 0px 40px 0px white;
+  transition: 0.3s;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/* Grid */
+main {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-areas: 
+  ". h2 ."
+  ". p1 ."
+  ". p2 ."
+  ". p3 . "
+  "pf pf pf";
+}
+
+.subhead {
+  grid-area: h2;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.p3 {
+  grid-area: p3;
+}
+/* Footer */
+
+.pf {
+  grid-area: pf;
+}
+
+footer {
+  font-size: 20px;
+  padding: 2vw;
+  margin: 4vw;
+
+}

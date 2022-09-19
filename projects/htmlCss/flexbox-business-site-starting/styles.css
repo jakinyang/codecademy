@@ -1,0 +1,298 @@
+/* Global */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(47, 79, 79);
+}
+/* 
+Font Faces 
+
+font-family: 'Comfortaa', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rampart One', cursive;
+
+*/
+
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 5px lightslategray;
+}
+
+header .wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Logo text styling */
+header .logoText {
+  font: 300 3em 'Comfortaa', cursive;
+  letter-spacing: 0.1em;
+}
+
+#first {
+  color: lightgray;
+}
+
+a:hover #first {
+  text-shadow: 6px 6px rgb(230, 230, 230), 12px 12px rgb(250, 250, 250);
+  transition: 0.1s;
+}
+
+#second {
+  color: rgb(119, 136, 153);
+}
+
+a:hover #second {
+  text-shadow: 6px 6px rgb(119, 118, 131), 12px 12px rgb(56, 55, 61);
+  transition: 0.1s;
+}
+
+#third {
+  color: rgb(47, 79, 79);
+}
+
+a:hover #third {
+  text-shadow: 6px 6px rgb(47, 60, 60), 12px 12px rgb(47, 20, 20);
+  transition: 0.1s;
+}
+
+/* Nav ul styling */
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  font: 400 1.3em 'Comfortaa', cursive;
+}
+
+header li {
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.stdNav:visited {
+  text-decoration: none;
+}
+
+.stdNav:hover {
+  opacity: 0.5;
+}
+
+.stdNav:active {
+  color: lightgray;
+}
+
+header .button {
+  max-width: 5vw;
+  max-height: auto;
+  padding: 1vw;
+  border-radius: 8px;
+  background-color:rgb(230, 230, 230);
+  text-decoration: none;
+  color:rgb(47, 60, 60)
+}
+
+header .button:hover {
+  color: whitesmoke;
+  background-color: rgb(56, 55, 61);
+}
+
+header .button:active {
+  opacity: 0.5;
+}
+
+/* Banner */
+main {
+  margin-top: 8.4em;
+}
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 60vw;
+  background-image: url(resources/images/raccoonBanner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+}
+
+#signUp {
+  width: 40%;
+  padding: 4%;
+  border-radius: 10px;
+  margin: 5% 5%;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#signUp h2 {
+  margin: 0 0 10% 0;
+  padding: 5%;
+  font: 100 italic 2em "Raleway", sans-serif;
+}
+
+#signUp h4 {
+  margin: 1em 1em 0.5em 1em;
+  font: 400 1.2em "Raleway", sans-serif;
+}
+
+#signUp h5 {
+  margin: 0.5em 1em 2em 1em;
+  font: 100 italic 1em "Raleway", sans-serif;
+}
+#signUp .button {
+  padding: 3% 20%;
+  border-radius: 8px;
+  background-color:rgb(230, 230, 230);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color:rgb(47, 60, 60)
+
+}
+
+#signUp .button:visited {
+  text-decoration: none;
+  color:rgb(47, 60, 60)
+}
+
+#signUp .button:hover {
+  color: whitesmoke;
+  background-color: rgb(56, 55, 61);
+}
+
+#signUp .button:active {
+  opacity: 0.5;
+}
+
+/* Services */
+/* Service grid */
+
+.serviceWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 5vw;
+  width: 100%;
+  height: 70vw;
+  margin: 5vw 0vw;
+  background-color: whitesmoke;
+}
+
+#gridTitle {
+  grid-area: 1 / 1 / 1 / 5;
+  background-color: aliceblue;
+}
+
+#assess {
+  grid-area: 2 / 1 / 11 / 1;
+  background-color: darkgrey;
+}
+#containment {
+  grid-area: 2 / 2 / 8 / 2;
+  background-color: lightsalmon;
+}
+#emergency {
+  grid-area: 8 / 2 / 11 / 2;
+  background-color: orangered;
+}
+#localReloc {
+  grid-area: 2 / 3 / 5 / 3;
+  background-color: lightgreen;
+}
+#remoteReloc {
+  grid-area: 5 / 3 / 8 / 3;
+  background-color: gold;
+}
+#rehabReloc {
+  grid-area: 8 / 3 / 11 / 3;
+  background-color: lightskyblue;
+}
+#postReloc {
+  grid-area: 2 / 4 / 11 / 4;
+  background-color: lightgray;
+}
+
+/* Service style */
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font: 400 1.8em "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.services h6 {
+  padding: 10px;
+  margin: 0;
+}
+
+.vertical {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  line-height: 1;
+}
+
+/* Team */
+.teamWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10vw 0vw;
+  background-color: lightgrey;
+}
+
+/* Team cards */
+
+.teamCard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  max-width: 15vw;
+  padding: 3vw 5vw;
+  border: 5px solid lavenderblush;
+  margin: 5vw 0vw;
+  background-color: wheat;
+}
+.imgWrap {
+  max-width: 80%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.teamCard img {
+  max-width: 100%;
+}
+
+.teamCard p {
+  margin: 1vw 0 0 0;
+  font: 300 1.5em "Comfortaa", cursive;
+  text-align: center;
+}

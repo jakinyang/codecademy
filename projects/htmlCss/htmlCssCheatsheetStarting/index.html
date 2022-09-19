@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="resources/css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Bitter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <title>The CSS Box Model</title>
+</head>
+<body>
+  <header>
+    <h1>The CSS Box Model</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#elements">Elements</a></li>
+      <li><a href="#attributes">Attributes</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>A brief overview</h2>
+    <h3>Overview</h3>
+    <section class="container" id="overview">
+      <img src="resources/images/boxModelDiagram.jpeg" alt="Diagram of box model: content, surrounded by the padding, surrounded by the border, then surrounded by the margin." title="Diagram of box model"> 
+    </section>
+    <h3>Elements</h3>
+    <section class="container" id="elements">
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content area</td>
+            <td>The real content of the element: text, video, image, etc. It is bound by the content edge</td>
+          </tr>
+          <tr>
+            <td>Padding area</td>
+            <td>The area that surrounds the content area up to the border. It is bound by the padding edge.</td>
+          </tr>
+          <tr>
+            <td>Border area</td>
+            <td>The area that surrounds the padding and is bound by the border edge.</td>
+          </tr>
+          <tr>
+            <td>Margin area</td>
+            <td>The area that surrounds the border and serves as a buffer between the element and other elements</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h3>Common Attributes</h3>
+    <section class="container" id="attributes">
+      <table>
+        <thead>
+          <tr>
+            <th>element</th>
+            <th>attribute</th>
+            <th>modifier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>content</td>
+            <td>width</td>
+            <td>max-, min-</td>
+          </tr>
+          <tr>
+            <td>content</td>
+            <td>height</td>
+            <td>max-, min-</td>
+          </tr>
+          <tr>
+            <td>padding</td>
+            <td>top-, right-, bottom-, left-</td>
+            <td>top/bottom + left/right || top + left/right + bottom</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>width</td>
+            <td>max-, min-</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>height</td>
+            <td>max-, min-</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>top-, right-, bottom-, left-</td>
+            <td>top/bottom + left/right || top + left/right + bottom</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+</main>
+<footer>
+  <p>Credit: Mozilla Developer Network 2022</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+/* Header */
+h1 {
+  
+}
+/* Nav */
+nav {
+  width: 100%;
+
+}
+
+ul {
+  
+
+}
+
+li {
+  display: inline;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+li::before {
+  content: "::";
+}
+
+li+li+li::after {
+  content: "::";
+}
+
+a {
+  
+}
+
+a:link {
+  color: rgb(3, 148, 252);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(252, 78, 3);
+}
+/* Main */
+/* Overview */
+
+img {
+  max-width: 100%;
+}
+
+/* Tables */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid white;
+}
+
+
+
+th, 
+td {
+  line-height: 1.5;
+  padding: 10px;
+  border: 5px double white;
+}
+
+/* Elements Table */
+
+#elements th:nth-child(1) {
+  width: 25%;
+}
+
+#elements th:nth-child(2) {
+  width: 75%;
+}
+
+/* Attributes Table */
+
+#attributes th:nth-child(1) {
+  width: 25%;
+}
+
+#attributes th:nth-child(2) {
+  width: 25%;
+}
+
+#attributes th:nth-child(3) {
+  width: 50%;
+}
+
+/* Footer */
+
+p {
+  text-transform: lowercase;
+}

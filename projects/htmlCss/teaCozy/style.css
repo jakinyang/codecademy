@@ -1,0 +1,142 @@
+/* Global */
+html {
+  opacity: 0.9;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  font-size: 20px;
+  font-family: fantasy;
+}
+/* Nav */
+nav {
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li a:link {
+  color: seashell;
+}
+
+nav li a:visited {
+  color: seashell;
+}
+
+nav li a:hover {
+  text-shadow: 1px 0px 0px seashell, -1px 0px 0px seashell, 0px 1px 0px seashell, 0px -1px 0px seashell;
+  color: black;
+}
+
+nav li a:active {
+  text-shadow: 1px 0px 0px seashell, -1px 0px 0px seashell, 0px 1px 0px seashell, 0px -1px 0px seashell;
+  color: black;
+}
+/* Body */
+
+/* Main */
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: 700px;
+  min-width: 1200px;
+  margin-top: 100px;
+  background-image: url(resources/img-mission-background.jpg);
+}
+
+.bannerTitle {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+
+}
+
+/* Featured */
+.featured {
+  max-width: 1000px;
+  text-align: center;
+  
+}
+.teaSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.featured .imageCard {
+  width: 300px;
+  height: 200px;
+}
+
+.card img {
+  margin-bottom: 10px;
+  max-width: 100%;
+  object-fit: contain;
+}
+/* Locations */
+.locations {
+  min-height: 500px;
+  padding: 50px;
+  background-image: url(resources/img-locations-background.jpg);
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin-top: 15px;
+}
+
+.address {
+  min-width: 300px; 
+  padding: 10px;
+  background-color: black;
+}
+
+/* Footer */
+
+footer .footCard {
+  max-height: 200px;
+  text-align: center;
+}
+
+footer h5 {
+  margin-left: 20px;
+}

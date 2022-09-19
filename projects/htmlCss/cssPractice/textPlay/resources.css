@@ -1,0 +1,77 @@
+
+
+/* Global */
+
+html {
+  font-size: 20px;
+  line-height: 1em;
+}
+
+/* Text */
+
+h1 {
+  color: lightsalmon;
+  font-size: 7em;
+  font-style: italic;
+}
+
+h2 {
+  color: lightskyblue;
+  font-size: 6em;
+  font-weight: 100;
+}
+
+h3 {
+  color: lightslategray;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 300;
+
+}
+
+h4 {
+  font-size: 4em;
+  color: lightgreen
+}
+
+h5 {
+  color: lightcyan;
+  font-size: 3em;
+  text-shadow:  4px 4px 1px lightskyblue,
+                8px 8px 4px lightsteelblue;
+  letter-spacing: 0.3em;
+}
+
+h6 {
+  color: lightpink;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-decoration: overline underline wavy;
+}
+
+p {
+  color: lightcoral;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+span {
+  text-decoration: line-through;
+  text-decoration-color: orangered;
+}
+
+.card {
+  color: lightslategray;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+  color: lightseagreen;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: light
+}
+
+
+
